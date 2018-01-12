@@ -8,7 +8,7 @@ A plug-in for uploading images to your server when you use vue-quill-editor.
 ```
 npm install vue-quill-editor-upload --save  
 ```
-##  基本案例
+###  基本使用
 ```vue
 <template>
   <!-- bidirectional data binding（双向数据绑定） -->

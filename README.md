@@ -14,7 +14,7 @@ npm install vue-quill-editor-upload --save
   <!-- bidirectional data binding（双向数据绑定） -->
   <quill-editor v-model="content"
                 ref="myQuillEditor"
-                :option="editorOption">
+                :options="editorOption">
   </quill-editor>
 </template>
 
@@ -33,7 +33,7 @@ npm install vue-quill-editor-upload --save
       this.editorOption = quillRedefine(
         {
           // 图片上传的设置
-          uplpadConfig: {
+          uploadConfig: {
             action: '',  // 必填参数 图片上传地址
             // 必选参数  res是一个函数，函数接收的response为上传成功时服务器返回的数据
             // 你必须把返回的数据中所包含的图片地址 return 回去
@@ -64,7 +64,7 @@ quillRedefine 可接收的所有参数(all params)
 ```vue
 {
           // 图片上传的设置
-          uplpadConfig: {
+          uploadConfig: {
             action: '',  // 必填参数 图片上传地址
             // 必选参数  res是一个函数，函数接收的response为上传成功时服务器返回的数据
             // 你必须把返回的数据中所包含的图片地址 return 回去
@@ -93,14 +93,14 @@ quillRedefine 可接收的所有参数(all params)
 
 ### first
   
-you must to do: ```:option="editorOption"``` to bound Parameters
+you must to do: ```:options="editorOption"``` to bound Parameters
 
-你必须绑定option ```:option="editorOption"``` 
+你必须绑定option ```:options="editorOption"``` 
 ```vue
 <template>
   <!-- bidirectional data binding（双向数据绑定） -->
   <quill-editor 
-                :option="editorOption">
+                :options="editorOption">
   </quill-editor>
 </template>
 
@@ -130,7 +130,7 @@ you must to do: ```:option="editorOption"``` to bound Parameters
        this.editorOption = quillRedefine(
          {
            // 图片上传的设置
-           uplpadConfig: {
+           uploadConfig: {
              action:  '',  // 必填参数 图片上传地址
              // 必选参数  res是一个函数，函数接收的response为上传成功时服务器返回的数据
              // 你必须把返回的数据中所包含的图片地址 return 回去
@@ -180,7 +180,7 @@ result: {
   <!-- bidirectional data binding（双向数据绑定） -->
   <quill-editor v-model="content"
                 ref="myQuillEditor"
-                :option="editorOption">
+                :options="editorOption">
   </quill-editor>
 </template>
 
@@ -199,7 +199,7 @@ result: {
       this.editorOption = quillRedefine(
         {
           // 图片上传的设置
-          uplpadConfig: {
+          uploadConfig: {
             action: '',  // 必填参数 图片上传地址
             // 必选参数  res是一个函数，函数接收的response为上传成功时服务器返回的数据
             // 你必须把返回的数据中所包含的图片地址 return 回去

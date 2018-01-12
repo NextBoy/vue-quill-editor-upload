@@ -1,0 +1,24 @@
+{
+  "name": "vue-quill-editor-upload",
+  "version": "1.0.0",
+  "description": "a plugin for vue-quill-editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NextBoy/vue-quill-editor-upload.git"
+  },
+  "keywords": [
+    "quill",
+    "upload",
+    "vue-quill-editor-upload"
+  ],
+  "author": "next-zhuo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NextBoy/vue-quill-editor-upload/issues"
+  },
+  "homepage": "https://github.com/NextBoy/vue-quill-editor-upload#readme"
+}

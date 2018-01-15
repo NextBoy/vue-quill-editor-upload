@@ -75,7 +75,7 @@ export const quillRedefine = (config) => {
                     xhr.onload = function (e) {
                         if (xhr.status === 200) {
                             var res = JSON.parse(xhr.responseText)
-                            let url = uplpadConfig.res(res)
+                            let url = uploadConfig.res(res)
                             // console.log(res)
                             let length = self.quill.getSelection(true).index;
                             self.quill.insertEmbed(length, 'image', url)

@@ -48,6 +48,10 @@ var quillRedefine = exports.quillRedefine = function quillRedefine(config) {
                 fileInput.classList.add('ql-image');
                 // 监听选择文件
                 fileInput.addEventListener('change', function () {
+                    // change事件
+                    if (uploadConfig.change) {
+                        uploadConfig.change(formData);
+                    }
                     // 如果图片限制大小
                     if (uploadConfig.size && fileInput.files[0].size >= uploadConfig.size * 1024) {
                         fileInput.value = '';
@@ -63,6 +67,10 @@ var quillRedefine = exports.quillRedefine = function quillRedefine(config) {
                     // 图片上传
                     var xhr = new XMLHttpRequest();
                     xhr.open(uploadConfig.methods, uploadConfig.action, true);
+                    // 设置请求头
+                    if (uploadConfig.header) {
+                        uploadConfig.header(xhr, formData);
+                    }
                     // 上传数据成功，会触发
                     xhr.onload = function (e) {
                         if (xhr.status === 200) {

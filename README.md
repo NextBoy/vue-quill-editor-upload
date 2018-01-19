@@ -6,7 +6,7 @@ A plug-in for uploading images to your server when you use vue-quill-editor.
 ## 更新记录
 当前版本：1.1
 
-- 增加设置请求header的接口 headers()
+- 增加设置请求header的接口 header()
 - 增加input点击事件的接口  change()
 
 
@@ -150,7 +150,7 @@ example
             change: (formData) => { 
             },
             // 设置请求头 xhr: 异步请求， formData: 表单对象
-            headers: (xhr, formData) => {
+            header: (xhr, formData) => {
                 // xhr.setRequestHeader('myHeader','myValue');
                 // formData.append('token', '1234')
             },
@@ -197,7 +197,7 @@ example
             change: (formData) => { 
             },
             // 设置请求头 xhr: 异步请求， formData: 表单对象
-            headers: (xhr, formData) => {
+            header: (xhr, formData) => {
                 // xhr.setRequestHeader('myHeader','myValue');
                 // formData.append('token', '1234')
             },

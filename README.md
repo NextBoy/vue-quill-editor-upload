@@ -3,6 +3,10 @@ A plug-in for uploading images to your server when you use vue-quill-editor.
 
 富文本编辑器vue-quill-editor的辅助插件，用于上传图片到你的服务器
 
+# 重要说明
+由于本模块不兼容其他模块，很有局限性，先已经开发了新的插件，并且增加了复制粘贴拖拽上传等功能，也能兼容别人的模块，大家要使用的话使用新模块[quill-image-extend-module](https://github.com/NextBoy/quill-image-extend-module)，完美兼容调整大小resize-module
+
+
 ## 更新记录
 当前版本：1.1
 
